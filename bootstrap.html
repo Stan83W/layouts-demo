@@ -17,44 +17,72 @@
       <h1>Bootstrap demo</h1>
       <p>Boilerplate to learn Bootstrap</p>
       <!-- TODO: Make this link a button -->
-      <a href="#">Make me a button</a>
+      <a href="#" class="btn btn-success btn-lg">Make me a button</a>
     </div>
 
     <div class="container padded text-center">
       <h2>Design a responsive form</h2>
 
       <!-- TODO: Make a reponsive Bootstrap form, then make it inline -->
-      <form action="">
-        <label for="email">Enter your email</label>
-        <input type="email" placeholder="bob@gmail.com" id="email">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+            <form action="">
+              <div class="form-group">
+                <label for="email">Enter your email</label>
+                <input type="email" placeholder="bob@gmail.com" id="email" class="form-control">
 
-        <label for="password">Enter your password</label>
-        <input type="password" placeholder="•••••••" id="password">
+              </div>
+              <div class="form-group">
+                <label for="password">Enter your password</label>
+                <input type="password" placeholder="•••••••" id="password" class="form-control">
 
-        <input type="submit" value="Sign in">
-      </form>
+              </div>
+
+              <input type="submit" value="Sign in" class="btn btn-danger">
+            </form>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="container padded">
       <h2 class="text-center">Design a card grid</h2>
       <!-- TODO: Use Bootstrap grid -->
-      <div class="card" style="background-image: url(images/malibu.jpg)">
-        Malibu
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="card" style="background-image: url(images/malibu.jpg)">
+              Malibu
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="card" style="background-image: url(images/ostuni.jpg)">
+              Ostuni
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="card" style="background-image: url(images/santorin.jpg)">
+              Santorin
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="card" style="background-image: url(images/marrakech.jpg)">
+              Marrakech
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="card" style="background-image: url(images/ostuni.jpg)">
-        Ostuni
-      </div>
-      <div class="card" style="background-image: url(images/santorin.jpg)">
-        Santorin
-      </div>
-      <div class="card" style="background-image: url(images/marrakech.jpg)">
-        Marrakech
-      </div>
+
+
+
+
     </div>
 
     <div class="footer">
       <!-- TODO: Make this list horizontal -->
-      <ul>
+      <ul class="list-inline">
         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
         <li><a href="#"><i class="fab fa-github"></i></a></li>
         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
